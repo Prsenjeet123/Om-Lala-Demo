@@ -3,68 +3,150 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OM LALA JI MART</title>
+
+<title>OM LALA JI MART | Grocery Store in Basti</title>
 
 <style>
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
-    background: #f5f5f5;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
 }
 
+/* HEADER */
 .header {
-    background: #2c3e50;
+    background: linear-gradient(135deg, #2c3e50, #34495e);
     color: white;
-    padding: 20px;
     text-align: center;
+    padding: 30px 20px;
 }
 
+.header h1 {
+    margin: 0;
+}
+
+.rating {
+    margin-top: 5px;
+    color: #f1c40f;
+}
+
+/* CONTAINER */
 .container {
     padding: 20px;
 }
 
+/* CARD */
 .card {
     background: white;
+    border-radius: 12px;
     padding: 20px;
-    border-radius: 10px;
     margin-bottom: 20px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
 }
 
+/* BUTTON */
 .btn {
     display: inline-block;
+    margin-top: 10px;
+    margin-right: 10px;
     padding: 10px 15px;
     background: #27ae60;
     color: white;
     text-decoration: none;
-    border-radius: 5px;
-    margin-right: 10px;
+    border-radius: 6px;
+}
+
+/* IMAGE GRID */
+.images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.images img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* REVIEW */
+.review {
+    border-top: 1px solid #eee;
+    padding-top: 10px;
+    margin-top: 10px;
 }
 </style>
+
 </head>
 
 <body>
 
+<!-- HEADER -->
 <div class="header">
     <h1>OM LALA JI MART</h1>
-    <p>⭐ 4.3 Rating | Grocery Store</p>
+    <div class="rating">⭐ 4.3 (68 Reviews) | Grocery Store</div>
 </div>
 
 <div class="container">
 
+<!-- LOCATION -->
 <div class="card">
     <h2>📍 Location</h2>
-    <p>Basti, Uttar Pradesh</p>
+    <p>Basti Khas, Uttar Pradesh 272001</p>
 
     <a href="tel:7905516147" class="btn">📞 Call</a>
     <a href="https://wa.me/917905516147" class="btn">💬 WhatsApp</a>
+    <a href="https://www.google.com/maps?q=OM+LALA+JI+MART+Basti" class="btn">📍 Directions</a>
 </div>
 
+<!-- PHOTOS -->
+<div class="card">
+    <h2>🛒 Store Photos</h2>
+    <div class="images">
+        <img src="https://via.placeholder.com/300x200">
+        <img src="https://via.placeholder.com/300x200">
+        <img src="https://via.placeholder.com/300x200">
+        <img src="https://via.placeholder.com/300x200">
+    </div>
+</div>
+
+<!-- CATEGORIES -->
+<div class="card">
+    <h2>🧾 Available Items</h2>
+    <ul>
+        <li>Groceries & Daily Essentials</li>
+        <li>Snacks & Beverages</li>
+        <li>Household Items</li>
+        <li>Personal Care Products</li>
+    </ul>
+</div>
+
+<!-- MAP -->
 <div class="card">
     <h2>🗺️ Map</h2>
-    <iframe width="100%" height="250"
+    <iframe width="100%" height="250" 
     src="https://www.google.com/maps?q=OM+LALA+JI+MART+Basti&output=embed">
     </iframe>
+</div>
+
+<!-- REVIEWS -->
+<div class="card">
+    <h2>⭐ Customer Reviews</h2>
+
+    <div class="review">
+        ⭐⭐⭐⭐⭐  
+        <p>"Complete shopping and well behaviour of staff"</p>
+    </div>
+
+    <div class="review">
+        ⭐⭐⭐⭐  
+        <p>"Good range of products at reasonable prices."</p>
+    </div>
+
+    <div class="review">
+        ⭐⭐⭐⭐⭐  
+        <p>"All in one shop, everything available."</p>
+    </div>
+
 </div>
 
 </div>
