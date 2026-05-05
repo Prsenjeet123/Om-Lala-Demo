@@ -26,7 +26,6 @@ body {
 }
 
 .rating {
-    margin-top: 5px;
     color: #f1c40f;
 }
 
@@ -47,8 +46,7 @@ body {
 /* BUTTON */
 .btn {
     display: inline-block;
-    margin-top: 10px;
-    margin-right: 10px;
+    margin: 10px 10px 0 0;
     padding: 10px 15px;
     background: #27ae60;
     color: white;
@@ -56,23 +54,35 @@ body {
     border-radius: 6px;
 }
 
-/* IMAGE GRID */
-.images {
+/* GRID */
+.grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
+    gap: 15px;
 }
 
-.images img {
+/* PRODUCT */
+.product {
+    text-align: center;
+}
+
+.product img {
     width: 100%;
+    height: 160px;
+    object-fit: cover;
     border-radius: 10px;
+}
+
+.product p {
+    margin: 5px 0;
+    font-weight: bold;
 }
 
 /* REVIEW */
 .review {
     border-top: 1px solid #eee;
-    padding-top: 10px;
     margin-top: 10px;
+    padding-top: 10px;
 }
 </style>
 
@@ -83,7 +93,7 @@ body {
 <!-- HEADER -->
 <div class="header">
     <h1>OM LALA JI MART</h1>
-    <div class="rating">⭐ 4.3 (68 Reviews) | Grocery Store</div>
+    <p class="rating">⭐ 4.3 (68 Reviews) | Grocery Store</p>
 </div>
 
 <div class="container">
@@ -98,30 +108,51 @@ body {
     <a href="https://www.google.com/maps?q=OM+LALA+JI+MART+Basti" class="btn">📍 Directions</a>
 </div>
 
-<!-- PHOTOS -->
+<!-- PRODUCTS -->
 <div class="card">
-    <h2>🛒 Store Photos</h2>
-    <div class="images">
-        <img src="https://images.unsplash.com/photo-1604719312566-8912e9c8a213">
-        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
+    <h2>🛒 Grocery Items</h2>
+
+    <div class="grid">
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1604908177522-0403c8b4d3e8">
+            <p>Cooking Oil</p>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1603048297172-c92544798d5a">
+            <p>Rice</p>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1587049352846-4a222e784d38">
+            <p>Spices</p>
+        </div>
+
+        <div class="product">
+            <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c">
+            <p>Groceries</p>
+        </div>
+
     </div>
 </div>
 
-<!-- CATEGORIES -->
+<!-- STORE PHOTOS -->
 <div class="card">
-    <h2>🧾 Available Items</h2>
-    <ul>
-        <li>Groceries & Daily Essentials</li>
-        <li>Snacks & Beverages</li>
-        <li>Household Items</li>
-        <li>Personal Care Products</li>
-    </ul>
+    <h2>📸 Store Photos</h2>
+
+    <div class="grid">
+        <img src="https://images.unsplash.com/photo-1604719312566-8912e9c8a213">
+        <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092">
+        <img src="https://images.unsplash.com/photo-1579113800032-c38bd7635818">
+        <img src="https://images.unsplash.com/photo-1586201375761-83865001e31c">
+    </div>
 </div>
 
 <!-- MAP -->
 <div class="card">
     <h2>🗺️ Map</h2>
-    <iframe width="100%" height="250" 
+    <iframe width="100%" height="250"
     src="https://www.google.com/maps?q=OM+LALA+JI+MART+Basti&output=embed">
     </iframe>
 </div>
@@ -132,17 +163,17 @@ body {
 
     <div class="review">
         ⭐⭐⭐⭐⭐  
-        <p>"Complete shopping and well behaviour of staff"</p>
+        <p>Complete shopping and well behaviour of staff</p>
     </div>
 
     <div class="review">
         ⭐⭐⭐⭐  
-        <p>"Good range of products at reasonable prices."</p>
+        <p>Good range of products at reasonable prices.</p>
     </div>
 
     <div class="review">
         ⭐⭐⭐⭐⭐  
-        <p>"All in one shop, everything available."</p>
+        <p>All items available at one place.</p>
     </div>
 
 </div>
